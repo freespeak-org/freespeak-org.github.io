@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freespeak - Private Voice Communication</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-primary {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .features h2 {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            color: white;
+            backdrop-filter: blur(10px);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .feature-card p {
+            opacity: 0.85;
+        }
+
+        .tech-section {
+            padding: 4rem 2rem;
+            color: white;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tech-section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .tech-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .tech-list li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .platforms {
+            padding: 4rem 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .platforms h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .platform-icons {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .platform {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .wip-banner {
+            background: #ff9800;
+            color: #000;
+            text-align: center;
+            padding: 0.5rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="wip-banner">
+        Work in Progress - Coming Soon
+    </div>
+
+    <header>
+        <div class="logo">Freespeak</div>
+        <p class="tagline">"We listen to your needs, not your calls"</p>
+    </header>
+
+    <section class="hero">
+        <h1>Private Voice Communication</h1>
+        <p>
+            An open-source, real-time voice chat application built with privacy at its core.
+            Host your own server and communicate freely.
+        </p>
+        <div class="cta-buttons">
+            <a href="https://github.com/freespeak-org/freespeak" class="btn btn-primary">View on GitHub</a>
+            <a href="https://github.com/freespeak-org/freespeak/releases" class="btn btn-secondary">Download</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Real-Time Voice Chat</h3>
+                <p>Low-latency voice communication with multiple participants in rooms. Server-side audio mixing ensures smooth conversations.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Privacy First</h3>
+                <p>Self-host your own server. Your conversations stay on your infrastructure, not on third-party services.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Text Chat</h3>
+                <p>Send messages alongside voice. Typing indicators let others know when you're composing a message.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Cross-Platform</h3>
+                <p>Native applications for macOS, Linux, and Windows. Same great experience everywhere.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Open Source</h3>
+                <p>BSD-3-Clause licensed. Inspect the code, contribute, and customize to your needs.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Simple Setup</h3>
+                <p>Easy to deploy server and intuitive client interface. Get your team talking in minutes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-section">
+        <h2>Built With</h2>
+        <ul class="tech-list">
+            <li>Go</li>
+            <li>Fyne (GUI)</li>
+            <li>PortAudio</li>
+            <li>WebSockets</li>
+            <li>UDP Streaming</li>
+        </ul>
+    </section>
+
+    <section class="platforms">
+        <h2>Available On</h2>
+        <div class="platform-icons">
+            <div class="platform">macOS</div>
+            <div class="platform">Linux</div>
+            <div class="platform">Windows</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            Freespeak is open source software by
+            <a href="https://github.com/freespeak-org">freespeak-org</a>
+        </p>
+        <p style="margin-top: 0.5rem;">
+            <a href="https://github.com/freespeak-org/freespeak">GitHub</a> ·
+            <a href="https://github.com/freespeak-org/freespeak/blob/main/LICENSE">License</a>
+        </p>
+    </footer>
+</body>
+</html>
